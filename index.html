@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testy Hut</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+</head>
+
+<body>
+
+    <header class="container my-1">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="./images/Tasty_HUT.png" alt=""></a>
+                <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- carousel -->
+        <section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/banner_1.png" class="d-block w-100" alt="...">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="carousel-caption  d-md-block">
+                            <h1 class="fw-bold display-2">Taste Our Delicious Best Foods</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.</p>
+                            <div class="input-group mb-3">
+                                <input id="searchInput" type="text" class="form-control" placeholder="search any food"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button onclick="loadAllData()" class="btn btn-primary" type="button"
+                                    id="button-addon2">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- favorite food section -->
+        <section class="container">
+            <h1 class="text-center my-5 py-3">Your Favourite Food</h1>
+            <div id="mealContainer" class="row row-cols-md-2 row-cols-1"></div>
+            <div class="text-center">
+                <button id="showAll" type="button" class="btn btn-primary fw-bold mb-5">Show All</button>
+            </div>
+        </section>
+
+        <!-- Modal section -->
+        <div class="modal fade" id="mealModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="mealModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div id="modalBody" class="modal-content">
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class=" py-5 bg-primary-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-2">
+                    <h3>Section</h3>
+                    <ul class="nav d-flex flex-column">
+                        <li><a href="" class="nav-link">Home</a></li>
+                        <li><a href="" class="nav-link">Features</a></li>
+                        <li><a href="" class="nav-link">Pricing</a></li>
+                        <li><a href="" class="nav-link">FAQs</a></li>
+                        <li><a href="" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h3>Section</h3>
+                    <ul class="nav d-flex flex-column">
+                        <li><a href="" class="nav-link">Home</a></li>
+                        <li><a href="" class="nav-link">Features</a></li>
+                        <li><a href="" class="nav-link">Pricing</a></li>
+                        <li><a href="" class="nav-link">FAQs</a></li>
+                        <li><a href="" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h3>Resource</h3>
+                    <ul class="nav d-flex flex-column">
+                        <li><a href="" class="nav-link">Home</a></li>
+                        <li><a href="" class="nav-link">Features</a></li>
+                        <li><a href="" class="nav-link">Pricing</a></li>
+                        <li><a href="" class="nav-link">FAQs</a></li>
+                        <li><a href="" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-5">
+                    <h3>Subscribe to our newsletter</h3>
+                    <p class="pt-4 text-muted">There are many variations of passages of available, but the majority have suffered
+                    </p>
+                    <div class="d-flex" role="search">
+                        <input class="form-control me-2 bg-primary-subtle p-3" type="search" placeholder="Email address"
+                            aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
